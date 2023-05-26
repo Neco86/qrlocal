@@ -1,0 +1,15 @@
+{
+  "name": "qrlocal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "clipboardy": "^3.0.0",
+    "commander": "^10.0.1",
+    "node-fetch": "^3.3.1",
+    "qrcode": "^1.5.3"
+  },
+  "bin": "src/index.js",
+  "type": "module"
+}
