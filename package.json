@@ -1,8 +1,13 @@
 {
   "name": "qrlocal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
+    "homepage": "https://github.com/Neco86/qrlocal",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Neco86/qrlocal.git"
+    },
   "dependencies": {
     "chalk": "^5.2.0",
     "clipboardy": "^3.0.0",
@@ -10,6 +15,7 @@
     "node-fetch": "^3.3.1",
     "qrcode": "^1.5.3"
   },
+  "description": "Convert long links to temporary short links with QR code within the LAN.",
   "bin": "src/index.js",
   "type": "module"
 }
