@@ -12,7 +12,7 @@ npm install qrlocal
 
 ### Step1: Copy long links
 
-### Ste2: Get temporary short links with QR code
+### Step2: Get temporary short links with QR code
 
 ```shell
 qrlocal
