@@ -151,11 +151,19 @@ const createShortServer = (hostname, port) => {
                 else {
                     res.end(long);
                 }
-                setTimeout(() => {
-                    logger.clear();
-                    server.close();
-                    process.exit(0);
-                }, 1000);
+                const clear = () => {
+                    setTimeout(() => {
+                        if (res.finished) {
+                            logger.clear();
+                            server.close();
+                            process.exit(0);
+                        }
+                        else {
+                            clear();
+                        }
+                    }, 200);
+                };
+                clear();
             }
         }
     });
